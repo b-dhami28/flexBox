@@ -8,27 +8,25 @@ export default function App() {
         backgroundColor: "#fff",
         flex: 1,
         flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
         paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
       }}
     >
       <View style={{
         backgroundColor: "dodgerblue",
         width: 100,
-        height: 100,
+        height: 400,
+        alignSelf: "flex-start",
       }}/>
 
       <View style={{
         backgroundColor: "gold",
         width: 100,
-        height: 100,
+        height: 300,
       }}/>
       <View style={{
         backgroundColor: "tomato",
-        width: 100,
-        height: 100,
-      }}/>
-      <View style={{
-        backgroundColor: "red",
         width: 100,
         height: 100,
       }}/>
