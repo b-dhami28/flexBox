@@ -10,15 +10,20 @@ export default function App() {
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
-        flexWrap: "wrap",
+        //flexWrap: "wrap",
         alignContent: "center",
         paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
       }}
     >
       <View style={{
         backgroundColor: "dodgerblue",
+        //flexBasis: 100,
+        //flexGrow: 1,
+        //width: 400,
         width: 100,
-        height: 300,
+        flexShrink: 1,
+        //width: 100,
+        height: 100,
         
       }}/>
 
@@ -26,22 +31,16 @@ export default function App() {
         backgroundColor: "gold",
         width: 100,
         height: 100,
+        left: 20,
+        top: 20,
+        position: "absolute",
       }}/>
       <View style={{
         backgroundColor: "tomato",
         width: 100,
         height: 100,
       }}/>
-      <View style={{
-        backgroundColor: "grey",
-        width: 100,
-        height: 100,
-      }}/>
-       <View style={{
-        backgroundColor: "greenyellow",
-        width: 100,
-        height: 100,
-      }}/>
+      
 
     </View>
   );
